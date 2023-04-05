@@ -473,5 +473,20 @@ video {
 
 body {
     font-family: 'Quicksand', serif;
+    background: #EDF2F4;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.stack {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 128px;
 }
 
