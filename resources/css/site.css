@@ -7,17 +7,17 @@ body {
     justify-content: center;
 }
 
-@media(max-width: 480px) {
-    .stack {
-        width: 90vw;
-    }
-}
-
 .stack {
     width: 480px;
     display: flex;
     flex-direction: column;
     gap: 36px;
+}
+
+@media(max-width: 500px) {
+    .stack {
+        width: 90vw;
+    }
 }
 
 .header {
