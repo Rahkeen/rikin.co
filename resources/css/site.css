@@ -7,20 +7,28 @@ body {
     justify-content: center;
 }
 
+@media(max-width: 480px) {
+    .stack {
+        width: 90vw;
+    }
+}
+
 .stack {
     width: 480px;
     display: flex;
     flex-direction: column;
+    gap: 36px;
 }
 
 .header {
-    margin-top: 128px;
+    margin-top: 40px;
     display: flex;
     font-family: 'Poppins', 'Quicksand', serif;
     font-weight: 500;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .avatar {
@@ -38,12 +46,69 @@ body {
     gap: 8px;
 }
 
-strong {
+.apps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.app-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-content > .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.row-content > .subtitle {
+    color: #8D99AE;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+h1 strong {
     font-weight: 700;
 }
 
 h1 {
     font-size: 2.25rem;
+}
+
+.section-header {
+    font-family: 'Poppins', 'Quicksand', serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.section-header strong {
+    font-weight: 600;
+}
+
+.footer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Poppins', 'Quicksand', serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.footer a {
+    font-weight: 600;
 }
 
 
